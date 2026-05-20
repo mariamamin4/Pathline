@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Firm | Chartwell Partners</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="css/ourfirm.css" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.jpg" />
+</head>
+<body>
+
+  <!-- ── SCROLL PROGRESS BAR ── -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-chartwell">Chartwell</span><span class="logo-partners">Partners</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <!-- Mobile menu header -->
+        <div class="mobile-menu-header">
+          <button class="mobile-search-btn" aria-label="Search"><i class="fa fa-search"></i></button>
+          <button class="mobile-close" id="mobileClose" aria-label="Close"><i class="fa fa-times"></i></button>
+        </div>
+
+        <!-- Mobile menu body -->
+        <div class="mobile-menu-body">
+          <a href="ourfirm.html" class="mobile-link active-link">
+            Our Firm <i class="fa fa-chevron-right mobile-arrow"></i>
+          </a>
+          <div class="mobile-group">
+            <span class="mobile-group-title">Expertise</span>
+            <a href="#" class="mobile-sub-link">Financial Services <i class="fa fa-chevron-right mobile-arrow"></i></a>
+            <a href="#" class="mobile-sub-link">Real Estate <i class="fa fa-chevron-right mobile-arrow"></i></a>
+          </div>
+          <div class="mobile-group">
+            <span class="mobile-group-title">Services</span>
+            <a href="#" class="mobile-sub-link">Executive Search <i class="fa fa-chevron-right mobile-arrow"></i></a>
+            <a href="#" class="mobile-sub-link">Board Services <i class="fa fa-chevron-right mobile-arrow"></i></a>
+            <a href="#" class="mobile-sub-link">Leadership Advisory <i class="fa fa-chevron-right mobile-arrow"></i></a>
+          </div>
+          <a href="index.html#contact" class="mobile-cta">Contact Us</a>
+        </div>
+
+        <!-- Desktop links -->
+        <div class="desktop-links">
+          <a href="ourfirm.html" class="nav-item active-link">Our Firm</a>
+
+          <div class="nav-item dropdown">
+            <span>Expertise <i class="fa fa-chevron-down fa-xs"></i></span>
+            <div class="dropdown-menu">
+              <a href="#">Financial Services</a>
+              <a href="#">Real Estate</a>
+            </div>
+          </div>
+
+          <div class="nav-item dropdown">
+            <span>Services <i class="fa fa-chevron-down fa-xs"></i></span>
+            <div class="dropdown-menu">
+              <a href="#">Executive Search</a>
+              <a href="#">Board Services</a>
+              <a href="#">Leadership Advisory</a>
+            </div>
+          </div>
+
+          <button class="nav-search-btn" id="navSearchBtn" aria-label="Search">
+            <i class="fa fa-search"></i>
+          </button>
+
+          <a href="index.html#contact" class="btn-contact">Contact Us</a>
+
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa fa-moon" id="themeIcon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Inline search bar -->
+    <div class="nav-search-bar" id="navSearchBar">
+      <input type="text" placeholder="Search services, expertise…" id="navSearchInput" />
+      <button onclick="document.getElementById('navSearchBar').classList.remove('active')">
+        <i class="fa fa-times"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════
+       1. HERO SECTION
+  ════════════════════════════════════════ -->
+  <section class="firm-hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+
+    <div class="hero-inner">
+      <!-- Left: text -->
+      <div class="hero-text">
+        <p class="hero-eyebrow reveal-hero" style="--d:.1s">CHARTWELL PARTNERS</p>
+        <h1 class="hero-title reveal-hero" style="--d:.25s">
+          Meet<br /><em>the Firm</em>
+        </h1>
+        <p class="hero-subtitle reveal-hero" style="--d:.4s">
+          Chartwell Partners is a retained executive search and leadership advisory firm exclusively focused on serving the Financial Services industry. We partner with banks, financial institutions, and financial services organizations to identify and recruit senior executives and Board members who drive long-term performance, stability, and growth.
+        </p>
+        <p class="hero-subtitle hero-subtitle--sm reveal-hero" style="--d:.5s">
+          Our founding Partners left senior leadership roles at a global search firm to create a highly specialized, client-centric firm. Every assignment is led hands-on by a Partner and supported by an experienced research, execution, and administrative team.
+        </p>
+        <div class="hero-actions reveal-hero" style="--d:.62s">
+          <a href="#story" class="btn-hero-primary">Our Story</a>
+          <a href="#consultants" class="btn-hero-ghost">Meet the Team</a>
+        </div>
+      </div>
+
+      <!-- Right: team photo -->
+      <div class="hero-card reveal-hero" style="--d:.45s">
+        <img src="images/team-photo.jpg" alt="Chartwell Partners Team" class="hero-card-img" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════════════════════════════════════════
+       2. COMPANY STORY SECTION
+  ════════════════════════════════════════ -->
+  <section class="story section-pad" id="story">
+    <div class="section-container">
+      <div class="story-grid">
+        <!-- Left: text -->
+        <div class="story-text reveal-left">
+          <p class="section-label">Our Story</p>
+          <h2>Built on Relationships.<br />Driven by Results.</h2>
+          <p>
+            Chartwell Partners was founded by senior partners who left the largest global search firms with a singular purpose: to create a boutique firm where every search receives the attention it deserves, from the first conversation to successful onboarding.
+          </p>
+          <p>
+            Our founding partners bring decades of deep-domain expertise in Financial Services and Real Estate. Every engagement is led personally by a partner — never delegated to junior staff — ensuring our clients receive the highest caliber of service and insight.
+          </p>
+          <p>
+            We measure our success not only by placements made, but by the long-term performance and satisfaction of every leader we place. Over 80% of our business comes from repeat clients, a testament to the trust we've earned.
+          </p>
+          <a href="index.html#contact" class="btn-outline-dark">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       3. CORE VALUES SECTION
+  ════════════════════════════════════════ -->
+  <section class="values section-pad" id="values">
+    <div class="section-container">
+      <div class="values-header reveal-scale">
+        <p class="section-label">What We Stand For</p>
+        <h2>Our Core Values</h2>
+        <p class="section-sub">
+          These principles guide every search, every conversation, and every relationship we build.
+        </p>
+      </div>
+
+      <div class="values-grid">
+
+        <div class="value-card reveal" style="--d:.05s">
+          <div class="value-icon-wrap">
+            <i class="fa fa-shield-halved"></i>
+          </div>
+          <h3>Integrity</h3>
+          <p>Our reputation is our livelihood. We choose to "think long" and let the golden rule govern every decision we make.</p>
+          <div class="value-card-line"></div>
+        </div>
+
+        <div class="value-card reveal" style="--d:.15s">
+          <div class="value-icon-wrap">
+            <i class="fa fa-star"></i>
+          </div>
+          <h3>Excellence</h3>
+          <p>We take pride in outstanding execution. Leveraging large-firm know-how, we apply a proven, disciplined search process with rigor and enthusiasm.</p>
+          <div class="value-card-line"></div>
+        </div>
+
+        <div class="value-card reveal" style="--d:.25s">
+          <div class="value-icon-wrap">
+            <i class="fa fa-handshake"></i>
+          </div>
+          <h3>Partnership</h3>
+          <p>We invest deeply in long-lasting relationships with clients and candidates alike, partnering through every step of the process — not just the placement.</p>
+          <div class="value-card-line"></div>
+        </div>
+
+        <div class="value-card reveal" style="--d:.35s">
+          <div class="value-icon-wrap">
+            <i class="fa fa-heart"></i>
+          </div>
+          <h3>Compassion</h3>
+          <p>We chose this work because we genuinely enjoy watching our clients and candidates succeed. Caring deeply is where every great placement begins.</p>
+          <div class="value-card-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       4. CONSULTANTS SECTION
+  ════════════════════════════════════════ -->
+  <section class="consultants section-pad" id="consultants">
+    <div class="section-container">
+      <div class="consultants-header reveal-scale">
+        <p class="section-label">The Team</p>
+        <h2>Our Consultants</h2>
+        <p class="section-sub">
+          Each search is personally led by a partner with deep-domain expertise, bringing
+          decades of industry relationships and executive insight to every engagement.
+        </p>
+      </div>
+
+      <div class="consultants-grid">
+
+        <div class="consultant-card reveal" style="--d:.05s">
+          <div class="consultant-img-wrap">
+            <img src="images/teamMember1.jpg" alt="Sean O'Neal" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Sean O'Neal</h4>
+            <p class="consultant-title">Managing Partner</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.12s">
+          <div class="consultant-img-wrap">
+            <img src="images/teamMember2.jpg" alt="J. Scott Petty" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>J. Scott Petty</h4>
+            <p class="consultant-title">Partner</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.19s">
+          <div class="consultant-img-wrap">
+            <img src="images/teamMember3.jpg" alt="Julie Bell, PhD" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Julie Bell, PhD</h4>
+            <p class="consultant-title">Partner</p>
+            <p class="consultant-focus">Leadership Advisory</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.26s">
+          <div class="consultant-img-wrap">
+            <img src="images/teamMember4.jpg" alt="Julia Harman" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Julia Harman</h4>
+            <p class="consultant-title">Senior Consultant</p>
+            <p class="consultant-focus">Leadership Advisory</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.33s">
+          <div class="consultant-img-wrap">
+            <img src="images/teamMember5.jpg" alt="McCall Adams" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>McCall Adams</h4>
+            <p class="consultant-title">Associate</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       5. ASSOCIATES SECTION
+  ════════════════════════════════════════ -->
+  <section class="associates section-pad" id="associates">
+    <div class="section-container">
+      <div class="sub-team-header reveal-scale">
+        <p class="section-label">Research &amp; Execution</p>
+        <h2>Associates</h2>
+        <p class="section-sub">
+          Our associates bring sharp analytical skills and industry knowledge,
+          supporting every engagement with diligence and precision.
+        </p>
+      </div>
+
+      <div class="sub-team-grid">
+
+        <div class="consultant-card reveal" style="--d:.05s">
+          <div class="consultant-img-wrap">
+            <img src="images/associate1.jpg" alt="Jackson Beall" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Jackson Beall</h4>
+            <p class="consultant-title">Associate</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.10s">
+          <div class="consultant-img-wrap">
+            <img src="images/associate2.jpg" alt="Byers Hellinghausen" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Byers Hellinghausen</h4>
+            <p class="consultant-title">Associate</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.15s">
+          <div class="consultant-img-wrap">
+            <img src="images/associate3.jpg" alt="Lindsey Hoesterey" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Lindsey Hoesterey</h4>
+            <p class="consultant-title">Associate</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.20s">
+          <div class="consultant-img-wrap">
+            <img src="images/associate4.jpg" alt="Amy Maloney" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Amy Maloney</h4>
+            <p class="consultant-title">Associate</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.25s">
+          <div class="consultant-img-wrap">
+            <img src="images/associate5.jpg" alt="Caitlin Thaeler" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Caitlin Thaeler</h4>
+            <p class="consultant-title">Associate</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="consultant-card reveal" style="--d:.30s">
+          <div class="consultant-img-wrap">
+            <img src="images/associate6.jpg" alt="Zoe Whisenhunt" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Zoe Whisenhunt</h4>
+            <p class="consultant-title">Associate</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       6. ADMINISTRATIVE TEAM SECTION
+  ════════════════════════════════════════ -->
+  <section class="admin-team section-pad" id="admin-team">
+    <div class="section-container">
+      <div class="sub-team-header reveal-scale">
+        <p class="section-label">Operations &amp; Support</p>
+        <h2>Administrative Team</h2>
+        <p class="section-sub">
+          The backbone of our firm — ensuring every engagement runs with precision,
+          care, and seamless coordination from start to finish.
+        </p>
+      </div>
+
+      <div class="sub-team-grid admin-grid">
+
+        <div class="consultant-card reveal" style="--d:.05s">
+          <div class="consultant-img-wrap">
+            <img src="images/admin1.jpg" alt="Martha Campbell" />
+            <div class="consultant-overlay">
+              <a href="#" class="overlay-link">View Profile <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="consultant-info">
+            <h4>Martha Campbell</h4>
+            <p class="consultant-title">Administrative Team</p>
+            <p class="consultant-focus">Financial Services / Real Estate</p>
+            <a href="#" class="profile-btn">View Profile <i class="fa fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       7. FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-chartwell">Chartwell</span><span class="logo-partners">Partners</span>
+        </a>
+        <p>A retained executive search firm dedicated to identifying exceptional leaders.</p>
+        <a href="index.html#contact" class="footer-cta">Contact Us</a>
+      </div>
+
+      <div class="footer-nav-cols">
+        <div class="footer-col">
+          <h5>About</h5>
+          <a href="ourfirm.html">Our Firm</a>
+          <a href="index.html#contact">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h5>Expertise</h5>
+          <a href="#">Financial Services</a>
+          <a href="#">Real Estate</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="#">Executive Search</a>
+          <a href="#">Board Services</a>
+          <a href="#">Leadership Advisory</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-middle">
+      <div class="footer-locations"><h5>Locations</h5></div>
+      <div class="footer-office">
+        <h5>Main Office</h5>
+        <p>300 Crescent Court</p>
+        <p>Suite 1425</p>
+        <p>Dallas, TX 75201</p>
+        <p class="footer-phone">Phone: (214) 269-1900</p>
+      </div>
+      <div class="footer-office">
+        <h5>Additional Office</h5>
+        <p>One Tabor Center</p>
+        <p>1200 17th Street</p>
+        <p>Denver, CO 80202</p>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Chartwell Partners. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <script src="js/ourfirm.js"></script>
+</body>
+</html>

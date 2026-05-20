@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chartwell Partners | Executive Search</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- FEATURE 5: Scroll progress bar -->
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-chartwell">Chartwell</span
+          ><span class="logo-partners">Partners</span>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+          <!-- Mobile menu header -->
+          <div class="mobile-menu-header">
+            <button
+              class="nav-search-btn mobile-search-btn"
+              id="mobileSearchBtn"
+              aria-label="Search"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+            <button
+              class="mobile-close"
+              id="mobileClose"
+              aria-label="Close menu"
+            >
+              <i class="fa fa-times"></i>
+            </button>
+          </div>
+
+          <!-- Mobile menu items -->
+          <div class="mobile-menu-body">
+            <a href="ourfirm.html" class="nav-item">
+              Our Firm <i class="fa fa-chevron-right mobile-arrow"></i>
+            </a>
+
+            <div class="mobile-group">
+              <span class="mobile-group-title">Expertise</span>
+              <a href="#" class="mobile-sub-link">
+                Financial Services
+                <i class="fa fa-chevron-right mobile-arrow"></i>
+              </a>
+              <a href="#" class="mobile-sub-link">
+                Real Estate <i class="fa fa-chevron-right mobile-arrow"></i>
+              </a>
+            </div>
+
+            <div class="mobile-group">
+              <span class="mobile-group-title">Services</span>
+              <a href="#" class="mobile-sub-link">
+                Executive Search
+                <i class="fa fa-chevron-right mobile-arrow"></i>
+              </a>
+              <a href="#" class="mobile-sub-link">
+                Board Services <i class="fa fa-chevron-right mobile-arrow"></i>
+              </a>
+              <a href="#" class="mobile-sub-link">
+                Leadership Advisory
+                <i class="fa fa-chevron-right mobile-arrow"></i>
+              </a>
+            </div>
+
+            <a href="#contact" class="mobile-cta">Contact Us</a>
+          </div>
+
+          <!-- Desktop-only items (hidden on mobile) -->
+          <div class="desktop-links">
+            <a href="ourfirm.html" class="nav-item">Our Firm</a>
+
+            <div class="nav-item dropdown">
+              <span>Expertise <i class="fa fa-chevron-down fa-xs"></i></span>
+              <div class="dropdown-menu">
+                <a href="#">Financial Services</a>
+                <a href="#">Real Estate</a>
+              </div>
+            </div>
+
+            <div class="nav-item dropdown">
+              <span>Services <i class="fa fa-chevron-down fa-xs"></i></span>
+              <div class="dropdown-menu">
+                <a href="#">Executive Search</a>
+                <a href="#">Board Services</a>
+                <a href="#">Leadership Advisory</a>
+              </div>
+            </div>
+
+            <button
+              class="nav-search-btn"
+              id="navSearchBtn"
+              aria-label="Search"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+
+            <a href="#contact" class="btn-contact">Contact Us</a>
+
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle dark mode"
+            >
+              <i class="fa fa-moon" id="themeIcon"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- FEATURE 1: Inline search bar (hidden by default) -->
+      <div class="nav-search-bar" id="navSearchBar">
+        <input
+          type="text"
+          placeholder="Search services, expertise…"
+          id="navSearchInput"
+        />
+        <button
+          onclick="
+            document.getElementById('navSearchBar').classList.remove('active')
+          "
+        >
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <img
+        src="images/58_ChartwellTeamPortraits_03-29-23.jpg"
+        alt="Chartwell Partners Team"
+        class="hero-img"
+      />
+      <div class="hero-content">
+        <h1 class="hero-headline">
+          A retained executive search firm dedicated to identifying exceptional
+          leaders.
+        </h1>
+      </div>
+    </section>
+    <!-- Dark blue services bar below hero -->
+    <div class="hero-services-bar">
+      <span>Executive Search</span>
+      <span class="bar-divider">|</span>
+      <span>Board Services</span>
+      <span class="bar-divider">|</span>
+      <span>Leadership Advisory</span>
+    </div>
+
+    <!-- ════════════════════════════════════════
+       INDUSTRY EXPERTISE SECTION
+  ════════════════════════════════════════ -->
+    <section class="expertise" id="expertise">
+      <div class="section-container">
+        <div class="expertise-header">
+          <div class="expertise-header-left">
+            <h2>Industry Expertise</h2>
+            <p class="section-sub">
+              With extensive training as senior partners of the largest global
+              search firms, we apply our in-depth industry knowledge to exceed
+              our clients' expectations.
+            </p>
+          </div>
+          <div class="expertise-header-right">
+            <a href="#about" class="btn-outline">MEET THE FIRM</a>
+          </div>
+        </div>
+
+        <div class="expertise-cards">
+          <div class="exp-card">
+            <div class="exp-icon">
+              <i class="fa fa-file-lines"></i>
+            </div>
+            <h3>Financial Services</h3>
+            <ul>
+              <li>
+                <i class="fa fa-arrow-right li-arrow"></i>Commercial, Community
+                and Private Banking
+              </li>
+              <li><i class="fa fa-arrow-right li-arrow"></i>Mortgage</li>
+              <li>
+                <i class="fa fa-arrow-right li-arrow"></i>Wealth Management
+              </li>
+              <li><i class="fa fa-arrow-right li-arrow"></i>Fintech</li>
+            </ul>
+            <a href="#" class="card-link"
+              >See More <i class="fa fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon">
+              <i class="fa fa-building"></i>
+            </div>
+            <h3>Real Estate</h3>
+            <ul>
+              <li><i class="fa fa-arrow-right li-arrow"></i>Homebuilders</li>
+              <li>
+                <i class="fa fa-arrow-right li-arrow"></i>Single Family Rental
+              </li>
+              <li><i class="fa fa-arrow-right li-arrow"></i>Private</li>
+              <li><i class="fa fa-arrow-right li-arrow"></i>Institutional</li>
+            </ul>
+            <a href="#" class="card-link"
+              >See More <i class="fa fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       TEAM SECTION
+  ════════════════════════════════════════ -->
+    <section class="team" id="about">
+      <div class="section-container">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="images/teamMember1.jpg" alt="Sean O'Neal" />
+            <div class="team-info">
+              <h4>Sean O'Neal</h4>
+              <p>Financial Services / Real Estate</p>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/teamMember2.jpg" alt="J. Scott Petty" />
+            <div class="team-info">
+              <h4>J. Scott Petty</h4>
+              <p>Financial Services / Real Estate</p>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/teamMember3.jpg" alt="Julie Bell" />
+            <div class="team-info">
+              <h4>Julie Bell, PhD</h4>
+              <p>Leadership Advisory</p>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/teamMember4.jpg" alt="Julia Harman" />
+            <div class="team-info">
+              <h4>Julia Harman</h4>
+              <p>Leadership Advisory</p>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/teamMember5.jpg" alt="McCall Adams" />
+            <div class="team-info">
+              <h4>McCall Adams</h4>
+              <p>Financial Services / Real Estate</p>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+     WHY COMPANIES TRUST US ( FEATURE 3: Animated numbers)
+════════════════════════════════════════ -->
+    <section class="trust" id="trust">
+      <div class="section-container">
+        <div class="trust-layout">
+          <!-- LEFT: text + values grid -->
+          <div class="trust-left">
+            <h2>Why Companies Trust Us</h2>
+            <p class="trust-intro">
+              Our cohesive, dedicated team of professionals has worked together
+              for over 20 years with a singular focus on delivering exceptional
+              leaders to our executive search clients. Our clients repeatedly
+              retain our proven research, recruitment, and onboarding expertise
+              to build their companies. As evidenced by more than 80% of our
+              work from repeat clients, our client partnerships are the
+              cornerstone of what we do.
+            </p>
+
+            <div class="values-grid">
+              <div class="value-item">
+                <h4>Excellence</h4>
+                <p>
+                  We take pride in outstanding execution. Leveraging our large
+                  firm know-how, we apply a proven, disciplined search process
+                  with rigor and enthusiasm.
+                </p>
+              </div>
+              <div class="value-item">
+                <h4>Compassion</h4>
+                <p>
+                  We chose this line of work because we enjoy seeing our clients
+                  and candidates succeed. We invest deeply in relationships that
+                  last, which starts with caring.
+                </p>
+              </div>
+              <div class="value-item">
+                <h4>Integrity</h4>
+                <p>
+                  Our reputation is our livelihood. We choose to "think long"
+                  and let the golden rule govern our decisions.
+                </p>
+              </div>
+              <div class="value-item">
+                <h4>Candor</h4>
+                <p>
+                  We take an advisory approach to our interactions. We provide
+                  candid perspective to our clients and candidates, facilitating
+                  more successful outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: animated stats -->
+          <div class="trust-right">
+            <div class="trust-stat">
+              <div class="trust-stat-number">
+                <span class="counter" data-target="45">0</span
+                ><span class="trust-plus">+</span>
+              </div>
+              <p class="trust-stat-label">Placements each year</p>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-stat">
+              <div class="trust-stat-number">
+                <span class="counter" data-target="80">0</span
+                ><span class="trust-plus">+</span>
+              </div>
+              <p class="trust-stat-label">
+                Percentage of our searches<br />are with repeat clients
+              </p>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-stat">
+              <div class="trust-stat-number">
+                <span class="counter" data-target="20">0</span
+                ><span class="trust-plus">+</span>
+              </div>
+              <p class="trust-stat-label">Years in business</p>
+            </div>
+            <div class="trust-divider"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       FEATURE 1: Testimonials / Quote Carousel
+  ════════════════════════════════════════ -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-container">
+        <h2>What Our Clients Say</h2>
+
+        <div class="carousel-wrapper">
+          <div class="carousel" id="carousel">
+            <div class="testimonial-slide active">
+              <blockquote>
+                "Chartwell Partners delivered beyond expectations. Their
+                understanding of our industry and culture was unmatched — they
+                found us a leader who transformed our organization."
+              </blockquote>
+              <cite>— CEO, Regional Community Bank</cite>
+            </div>
+            <div class="testimonial-slide">
+              <blockquote>
+                "The team's candor and responsiveness set them apart. They
+                didn't just fill a seat — they partnered with us through every
+                step of the process."
+              </blockquote>
+              <cite>— Managing Director, Private Equity Firm</cite>
+            </div>
+            <div class="testimonial-slide">
+              <blockquote>
+                "We've worked with Chartwell Partners on multiple searches. The
+                quality and consistency of candidates is why we keep coming
+                back."
+              </blockquote>
+              <cite>— CHRO, Wealth Management Group</cite>
+            </div>
+          </div>
+          <div class="carousel-dots" id="carouselDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <div class="carousel-arrows">
+            <button id="prevBtn"><i class="fa fa-chevron-left"></i></button>
+            <button id="nextBtn"><i class="fa fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       FEATURE 2: Newsletter / CTA Banner
+  ════════════════════════════════════════ -->
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter-inner">
+        <div class="newsletter-text">
+          <h2>Stay Ahead of the Talent Market</h2>
+          <p>
+            Subscribe to receive leadership insights, market updates, and
+            executive search trends from the Chartwell Partners team.
+          </p>
+        </div>
+        <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit">
+            Subscribe <i class="fa fa-arrow-right fa-xs"></i>
+          </button>
+        </form>
+        <div class="newsletter-success" id="newsletterSuccess">
+          <i class="fa fa-check-circle"></i> Thank you for subscribing!
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       CONTACT SECTION 
+  ════════════════════════════════════════ -->
+
+    <!-- ══════════════════════════════════════════
+   FEATURE 4: CONTACT FORM WITH FULL VALIDATION
+══════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+      <div class="section-container contact-grid">
+        <div class="contact-info">
+          <p class="section-label">Get in Touch</p>
+          <h2>Ready to Find<br />Exceptional Leaders?</h2>
+          <p>
+            Our team is ready to discuss your executive search needs and how we
+            can help build your leadership team.
+          </p>
+          <div class="contact-details">
+            <p>
+              <i class="fa fa-location-dot"></i> 300 Crescent Court, Dallas, TX
+            </p>
+            <p><i class="fa fa-phone"></i> (214) 269-1900</p>
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contactForm"
+          onsubmit="handleContact(event)"
+          novalidate
+        >
+          <h3>Send Us a Message</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName"
+                >First Name <span class="req">*</span></label
+              >
+              <input type="text" id="firstName" placeholder="John" />
+              <span class="field-error" id="err-firstName"
+                >Please enter your first name.</span
+              >
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="req">*</span></label>
+              <input type="text" id="lastName" placeholder="Doe" />
+              <span class="field-error" id="err-lastName"
+                >Please enter your last name.</span
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" placeholder="john@company.com" />
+            <span class="field-error" id="err-email"
+              >Please enter a valid email address.</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="(555) 000-0000" />
+            <span class="field-error" id="err-phone"
+              >Please enter a valid phone number (digits only, 7–15
+              chars).</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="password"
+              >Create a Password <span class="req">*</span></label
+            >
+            <div class="password-wrap">
+              <input
+                type="password"
+                id="password"
+                placeholder="Min. 8 chars, 1 number, 1 uppercase"
+              />
+              <button
+                type="button"
+                class="toggle-pw"
+                onclick="togglePassword()"
+              >
+                <i class="fa fa-eye" id="pwEyeIcon"></i>
+              </button>
+            </div>
+            <div class="pw-strength" id="pwStrength">
+              <div class="pw-bar" id="pwBar"></div>
+            </div>
+            <span class="pw-hint" id="pwHint"></span>
+            <span class="field-error" id="err-password"
+              >Min. 8 characters, at least 1 uppercase and 1 number.</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="service"
+              >Service of Interest <span class="req">*</span></label
+            >
+            <select id="service">
+              <option value="" disabled selected>Select a service…</option>
+              <option>Executive Search</option>
+              <option>Board Services</option>
+              <option>Leadership Advisory</option>
+            </select>
+            <span class="field-error" id="err-service"
+              >Please select a service.</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea
+              rows="4"
+              id="message"
+              placeholder="Tell us about your search needs…"
+            ></textarea>
+            <span class="char-count" id="charCount">0 / 500</span>
+            <span class="field-error" id="err-message"
+              >Please enter a message (10–500 characters).</span
+            >
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="consent" />
+              <span
+                >I agree to be contacted by Chartwell Partners.
+                <span class="req">*</span></span
+              >
+            </label>
+            <span class="field-error" id="err-consent"
+              >You must agree to be contacted.</span
+            >
+          </div>
+
+          <button type="submit" class="btn-primary full-width" id="submitBtn">
+            Send Message
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            <i class="fa fa-check-circle"></i> Message sent! We'll be in touch
+            shortly.
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+    <footer class="footer">
+      <!-- TOP ROW -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <span class="logo-chartwell">Chartwell</span
+            ><span class="logo-partners">Partners</span>
+          </a>
+          <p>
+            A retained executive search firm dedicated to identifying
+            exceptional leaders.
+          </p>
+          <a href="#contact" class="footer-cta">Contact Us</a>
+        </div>
+
+        <div class="footer-nav-cols">
+          <div class="footer-col">
+            <h5>About</h5>
+            <a href="#about">Our Firm</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+
+          <div class="footer-col">
+            <h5>Expertise</h5>
+            <a href="#">Financial Services</a>
+            <a href="#">Real Estate</a>
+          </div>
+
+          <div class="footer-col">
+            <h5>Services</h5>
+            <a href="#">Executive Search</a>
+            <a href="#">Board Services</a>
+            <a href="#">Leadership Advisory</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="footer-divider"></div>
+
+      <!-- MIDDLE ROW: Locations -->
+      <div class="footer-middle">
+        <div class="footer-locations">
+          <h5>Locations</h5>
+        </div>
+        <div class="footer-office">
+          <h5>Main Office</h5>
+          <p>300 Crescent Court</p>
+          <p>Suite 1425</p>
+          <p>Dallas, TX 75201</p>
+          <p class="footer-phone">Phone: (214) 269-1900</p>
+        </div>
+        <div class="footer-office">
+          <h5>Additional Office</h5>
+          <p>One Tabor Center</p>
+          <p>1200 17th Street</p>
+          <p>Denver, CO 80202</p>
+        </div>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="footer-divider"></div>
+
+      <!-- BOTTOM ROW -->
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-icon">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+        <p class="footer-copy">
+          © 2026 Chartwell Partners. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ════════════════════════════════════════
+       FEATURE 6: Back-to-Top Button
+  ════════════════════════════════════════ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
